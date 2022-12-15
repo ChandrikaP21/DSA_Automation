@@ -1,0 +1,42 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31009.304
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartPrice_E2E_WebAutomation", "SmartPrice_E2E_WebAutomation\SmartPrice_E2E_WebAutomation.csproj", "{033C8B2B-10C7-4B50-9C15-A10261F2243C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{E0D43A10-13A9-494C-B355-9B715F6C8789}"
+	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LATAM_SmartPrice_E2E_WebAutomation", "LATAM_SmartPrice_E2E_WebAutomation\LATAM_SmartPrice_E2E_WebAutomation.csproj", "{C38EF88A-112D-4B6D-8C8C-A528EE082D74}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EMEA_SmartPrice_E2E_WebAutomation", "EMEA_SmartPrice_E2E_WebAutomation\EMEA_SmartPrice_E2E_WebAutomation.csproj", "{8707AD75-53EA-4843-90A6-CC65A0A488F1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{033C8B2B-10C7-4B50-9C15-A10261F2243C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{033C8B2B-10C7-4B50-9C15-A10261F2243C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{033C8B2B-10C7-4B50-9C15-A10261F2243C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{033C8B2B-10C7-4B50-9C15-A10261F2243C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C38EF88A-112D-4B6D-8C8C-A528EE082D74}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C38EF88A-112D-4B6D-8C8C-A528EE082D74}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C38EF88A-112D-4B6D-8C8C-A528EE082D74}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C38EF88A-112D-4B6D-8C8C-A528EE082D74}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8707AD75-53EA-4843-90A6-CC65A0A488F1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8707AD75-53EA-4843-90A6-CC65A0A488F1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8707AD75-53EA-4843-90A6-CC65A0A488F1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8707AD75-53EA-4843-90A6-CC65A0A488F1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0A6860CD-28BA-4B45-96A4-2F552C7615E0}
+	EndGlobalSection
+EndGlobal

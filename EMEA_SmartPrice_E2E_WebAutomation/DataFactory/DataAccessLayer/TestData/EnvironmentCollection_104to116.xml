@@ -1,0 +1,110 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<DataFeed>
+  <Applications><!--Goal-->SmartPrice</Applications>
+  <Country><!--Australia--><!--UNITED STATES-->SWEDEN</Country>
+  <CountryZone>EMEA</CountryZone>
+  <Scenarios>
+
+
+
+
+
+    <Scenario ID="D106">
+      <Testcase>
+        <TestCaseTitle>DirectCreateNewQuote-AddAccessories</TestCaseTitle>
+        <IsCustomerIdentificationQueryBased>N</IsCustomerIdentificationQueryBased>
+        <CustomerIdentificationQuery>
+          <![CDATA[where CREATED > TO_DATE('08/01/2021', 'MM/DD/YYYY') and georegion = 'Americas' and geocountry = 'United States'and QuoteNumber Is not null and QUOTINGSYSTEM ='DSP' and isDirect='false' and isPartner='true' and ENDUSERACCOUNTEXISTS='true' and ISDISTRIBUTOR='true' and enduseraccountcustomerid is not null]]>
+        </CustomerIdentificationQuery>
+
+        <CustomerIdentificationData>SE3054453</CustomerIdentificationData>
+        <AccountCustomerId></AccountCustomerId>
+        <EndCustomerId>SE6300038036</EndCustomerId>
+
+        <SFDCID></SFDCID>
+        <ProductIdentificaton>
+          <BaseProduct>
+            <IsIdentifiedByQuery>N</IsIdentifiedByQuery>
+            <ProductIdentificationQuery>
+              <![CDATA[CREATED > TO_DATE('08/15/2021', 'MM/DD/YYYY')and geocountry = 'United States'and QuoteNumber Is not null  and OrderCode Is not Null and QUOTINGSYSTEM ='DSP']]>
+            </ProductIdentificationQuery>
+            <ProductIdentificationData>
+              <![CDATA[]]>
+            </ProductIdentificationData>
+            <SystemSearch>Latitude</SystemSearch>
+            <SAndPSearch></SAndPSearch>
+            <Accessories Type="ADD">
+              <Module>
+                <Id></Id>
+                <AccessoryID></AccessoryID>
+              </Module>
+
+            </Accessories>
+          </BaseProduct>
+        </ProductIdentificaton>
+      </Testcase>
+      <!--<Testcase>
+        <TestCaseTitle>Direct</TestCaseTitle>
+        <IsCustomerIdentificationQueryBased>N</IsCustomerIdentificationQueryBased>
+        <CustomerIdentificationQuery>
+          <![CDATA[where CREATED > TO_DATE('11/15/2021', 'MM/DD/YYYY') georegion = 'Americas' and geocountry = 'United States'and QuoteNumber Is not null and QUOTINGSYSTEM ='DSP' and EndUserAccountCustomerId is not null and isdirect='true' and ISDISTRIBUTOR='true' ]]>
+        </CustomerIdentificationQuery>
+       <CustomerIdentificationData>148072117</CustomerIdentificationData>
+        <AccountCustomerId>17222222</AccountCustomerId>
+         <EndCustomerId>6797841</EndCustomerId>
+        <SFDCID>22262963</SFDCID>
+        <ProductIdentificaton>
+          <BaseProduct>
+            <IsIdentifiedByQuery>Y</IsIdentifiedByQuery>
+            <ProductIdentificationQuery>
+              <![CDATA[CREATED > TO_DATE('08/15/2021', 'MM/DD/YYYY')and geocountry = 'United States'and QuoteNumber Is not null  and OrderCode Is not Null and QUOTINGSYSTEM ='DSP']]>
+            </ProductIdentificationQuery>
+            <ProductIdentificationData>
+              <![CDATA[smi153w11p1c5103]]>
+            </ProductIdentificationData>
+            <SystemSearch>Precision</SystemSearch>
+            <SAndPSearch>Monitor</SAndPSearch>
+            <Accessories Type="ADD">
+              <Module>
+                <Id>8601</Id>
+                <AccessoryID></AccessoryID>
+              </Module>
+            </Accessories>
+          </BaseProduct>
+        </ProductIdentificaton>
+      </Testcase>
+      <Testcase>
+        <TestCaseTitle>Direct</TestCaseTitle>
+        <IsCustomerIdentificationQueryBased>N</IsCustomerIdentificationQueryBased>
+        <CustomerIdentificationQuery>
+          <![CDATA[where CREATED > TO_DATE('11/15/2021', 'MM/DD/YYYY') georegion = 'Americas' and geocountry = 'United States'and QuoteNumber Is not null and QUOTINGSYSTEM ='DSP' and EndUserAccountCustomerId is not null and isdirect='true' and ISDISTRIBUTOR='true' ]]>
+        </CustomerIdentificationQuery>
+        <CustomerIdentificationData>EnterPartneraccountNo</CustomerIdentificationData>
+      <CustomerIdentificationData>148072117</CustomerIdentificationData>
+        <AccountCustomerId>17222222</AccountCustomerId>
+         <EndCustomerId>6797841</EndCustomerId>
+        <SFDCID>22262963</SFDCID>
+        <ProductIdentificaton>
+          <BaseProduct>
+            <IsIdentifiedByQuery>Y</IsIdentifiedByQuery>
+            <ProductIdentificationQuery>
+              <![CDATA[CREATED > TO_DATE('08/15/2021', 'MM/DD/YYYY')and geocountry = 'United States'and QuoteNumber Is not null  and OrderCode Is not Null and QUOTINGSYSTEM ='DSP']]>
+            </ProductIdentificationQuery>
+            <ProductIdentificationData>
+              <![CDATA[]]>
+            </ProductIdentificationData>
+            <SystemSearch>Precision</SystemSearch>
+            <SAndPSearch>Monitor</SAndPSearch>
+            <Accessories Type="ADD">
+              <Module>
+                <Id>5113</Id>
+                <AccessoryID> [UP3017CC] </AccessoryID>
+              </Module>
+            </Accessories>
+          </BaseProduct>
+        </ProductIdentificaton>
+      </Testcase>-->
+    </Scenario>
+
+  </Scenarios>
+</DataFeed>

@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Content>
+  <Translate To="Finland">
+
+    <Word>
+      <Texttotranslate>Search</Texttotranslate>
+      <Translatedtext>Haku</Translatedtext>
+    </Word>
+    <Word>
+      <Texttotranslate>Käyttöjärjestelmä</Texttotranslate>
+      <Translatedtext>Kyttjrjestelm</Translatedtext>
+    </Word>
+    <Word>
+      <Texttotranslate>Collection and return service, 12 months, 12 months</Texttotranslate>
+      <Translatedtext>Nouto- ja palautuspalvelu, 12 kuukautta, 12 kk</Translatedtext>
+    </Word>
+  </Translate>
+  <Translate To="french">
+    <Word>
+      <Texttotranslate>Search</Texttotranslate>
+      <Translatedtext>Haku</Translatedtext>
+    </Word>
+    <Word>
+      <Texttotranslate>Product</Texttotranslate>
+      <Translatedtext>aaa</Translatedtext>
+    </Word>
+  </Translate>
+  <Translate To="Sweden">
+    <Word>
+      <Texttotranslate>Search</Texttotranslate>
+      <Translatedtext>Haku</Translatedtext>
+    </Word>
+    <Word>
+      <Texttotranslate>Extended services</Texttotranslate>
+      <Translatedtext>Utökade tjänster</Translatedtext>
+    </Word>
+ 
+  </Translate>
+</Content>

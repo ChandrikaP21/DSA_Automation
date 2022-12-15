@@ -1,0 +1,6 @@
+How to run exe file:
+
+1.Open release folder.
+2.Go to "Release\DataFactory\DataAccessLayer\TestData" and update "EnvironmentCollection.xml"
+3.Go back to Release folder and search for the "LATAM_SmartPrice_E2E_WebAutomation.exe.config" and change the xml file path .
+4.Then double click on "LATAM_SmartPrice_E2E_WebAutomation" application in order to execute all the scenarios.

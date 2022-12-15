@@ -1,0 +1,321 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C38EF88A-112D-4B6D-8C8C-A528EE082D74}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>LATAM_SmartPrice_E2E_WebAutomation</RootNamespace>
+    <AssemblyName>LATAM_SmartPrice_E2E_WebAutomation</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AngleSharp, Version=0.16.0.0, Culture=neutral, PublicKeyToken=e83494dcdc6d31ea, processorArchitecture=MSIL">
+      <HintPath>..\packages\AngleSharp.0.16.0\lib\net472\AngleSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSharpCode.SharpZipLib, Version=1.3.2.10, Culture=neutral, PublicKeyToken=1b03e6acf1164f73, processorArchitecture=MSIL">
+      <HintPath>..\packages\SharpZipLib.1.3.2\lib\net45\ICSharpCode.SharpZipLib.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Configuration, Version=6.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Configuration.6.0.0\lib\net461\Microsoft.Extensions.Configuration.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Configuration.Abstractions, Version=6.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Configuration.Abstractions.6.0.0\lib\net461\Microsoft.Extensions.Configuration.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Configuration.Binder, Version=6.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Configuration.Binder.6.0.0\lib\net461\Microsoft.Extensions.Configuration.Binder.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Configuration.FileExtensions, Version=6.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Configuration.FileExtensions.6.0.0\lib\net461\Microsoft.Extensions.Configuration.FileExtensions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Configuration.Json">
+      <HintPath>..\packages\Microsoft.Extensions.Configuration.Json.6.0.0\lib\net461\Microsoft.Extensions.Configuration.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.DependencyInjection, Version=6.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.DependencyInjection.6.0.0\lib\net461\Microsoft.Extensions.DependencyInjection.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.DependencyInjection.Abstractions, Version=6.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.DependencyInjection.Abstractions.6.0.0\lib\net461\Microsoft.Extensions.DependencyInjection.Abstractions.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Primitives, Version=7.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Primitives.7.0.0-preview.2.22152.2\lib\net462\Microsoft.Extensions.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Win32.Registry, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Win32.Registry.5.0.0\lib\net461\Microsoft.Win32.Registry.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.13.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Oracle.ManagedDataAccess">
+      <HintPath>..\packages\Oracle.ManagedDataAccess.19.11.0\lib\net40\Oracle.ManagedDataAccess.dll</HintPath>
+    </Reference>
+    <Reference Include="SeleniumExtras.WaitHelpers, Version=3.11.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\DotNetSeleniumExtras.WaitHelpers.3.11.0\lib\net45\SeleniumExtras.WaitHelpers.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Buffers.4.5.1\lib\net461\System.Buffers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Configuration.ConfigurationManager, Version=5.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Configuration.ConfigurationManager.5.0.0\lib\net461\System.Configuration.ConfigurationManager.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.OracleClient" />
+    <Reference Include="System.Data.SqlClient, Version=4.6.1.2, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Data.SqlClient.4.8.2\lib\net461\System.Data.SqlClient.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net" />
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=7.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.7.0.0-preview.2.22152.2\lib\net462\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security" />
+    <Reference Include="System.Security.AccessControl, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Security.AccessControl.5.0.0\lib\net461\System.Security.AccessControl.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Permissions, Version=5.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Security.Permissions.5.0.0\lib\net461\System.Security.Permissions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Principal.Windows, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Security.Principal.Windows.5.0.0\lib\net461\System.Security.Principal.Windows.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ServiceProcess" />
+    <Reference Include="System.Text.Encoding.CodePages, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Text.Encoding.CodePages.5.0.0\lib\net461\System.Text.Encoding.CodePages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WebDriver">
+      <HintPath>..\packages\Selenium.WebDriver.3.141.0\lib\net35\WebDriver.dll</HintPath>
+    </Reference>
+    <Reference Include="WebDriver.Support, Version=3.11.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Selenium.Support.3.11.0\lib\net45\WebDriver.Support.dll</HintPath>
+    </Reference>
+    <Reference Include="WebDriverManager, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\WebDriverManager.2.11.3\lib\netstandard2.0\WebDriverManager.dll</HintPath>
+    </Reference>
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Bedrock\Utilities\Console_PresentationLayer.cs" />
+    <Compile Include="Bedrock\Utilities\SimpleLogger.cs" />
+    <Compile Include="DataFactory\DataAccessLayer\TestData\DataFeed.cs" />
+    <Compile Include="DataFactory\DataAccessLayer\TestData\ProductIdentificaton.cs" />
+    <Compile Include="DataFactory\DataAccessLayer\TestData\Scenario.cs" />
+    <Compile Include="DataFactory\DataAccessLayer\TestData\TestCase.cs" />
+    <Compile Include="DataFactory\DataAccessLayer\TestData\TestDataReader.cs" />
+    <Compile Include="DataFactory\DBConnection\Class1.cs" />
+    <Compile Include="DataFactory\DBConnection\InsertTestResult.cs">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="DataFactory\DBConnection\OracleDBConnection.cs">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="Helper\CustomConfigurationProvider.cs" />
+    <Compile Include="Helper\GenericHelper.cs" />
+    <Compile Include="Helper\InitializeBaseClass.cs" />
+    <Compile Include="Helper\TestConfigurationSettings.cs" />
+    <Compile Include="Helper\URLHelper.cs" />
+    <Compile Include="ModuleFlow\GOAL\D01Flow.cs" />
+    <Compile Include="ModuleFlow\GOAL\D02Flow.cs" />
+    <Compile Include="Objects\Accessories.cs" />
+    <Compile Include="Objects\ApplicationObjects.cs" />
+    <Compile Include="Objects\AppliedPoliciesJSONDeserializer.cs" />
+    <Compile Include="Objects\AppliedPolicy.cs" />
+    <Compile Include="Objects\Constant.cs" />
+    <Compile Include="Objects\CustomerClass.cs" />
+    <Compile Include="Objects\DraftQuotePageObject.cs" />
+    <Compile Include="Objects\DriverHelper.cs" />
+    <Compile Include="Objects\DSAPageObject.cs" />
+    <Compile Include="Objects\JSONDeserializer.cs" />
+    <Compile Include="Objects\Pages\ConfigurationPage.cs" />
+    <Compile Include="Objects\Pages\CustomerPage.cs" />
+    <Compile Include="Objects\Pages\WaitHelperClass.cs" />
+    <Compile Include="Objects\Quote\Module.cs" />
+    <Compile Include="Objects\Quote\ModuleItem.cs" />
+    <Compile Include="Objects\Quote\Product.cs" />
+    <Compile Include="Objects\SFDCChangeClass.cs" />
+    <Compile Include="Objects\SmartPricePopUpClass.cs" />
+    <Compile Include="Objects\SmartPrice\Compare\Guidance.cs" />
+    <Compile Include="Objects\SmartPrice\Compare\PNRAPILogCompare.cs" />
+    <Compile Include="Objects\SmartPrice\Compare\SalesContext.cs" />
+    <Compile Include="Objects\SmartPrice\Guidance.cs" />
+    <Compile Include="Objects\SmartPrice\GuidanceMessage.cs" />
+    <Compile Include="Objects\SmartPrice\PNRAPICalulationCompare.cs" />
+    <Compile Include="Objects\SmartPrice\PNRAPILog.cs" />
+    <Compile Include="Objects\SmartPrice\RequestParams.cs" />
+    <Compile Include="Objects\SmartPrice\SmartPriceFinancials.cs" />
+    <Compile Include="Objects\SmartPrice\SmartPriceFinancialsCalculator.cs" />
+    <Compile Include="Objects\TotalFinancialCalculation.cs" />
+    <Compile Include="Pages\DSA\DSAHomePage.cs" />
+    <Compile Include="Pages\DSA\DSAQuoteSummaryObject.cs" />
+    <Compile Include="Pages\DSA\DSAQuoteSummaryPage.cs" />
+    <Compile Include="Pages\GOAL\GoalHomePage.cs" />
+    <Compile Include="Pages\GOAL\GoalLoginPage.cs" />
+    <Compile Include="Pages\GOAL\GoalObject.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Quote\CopyNewQuote_Direct\D01\ScenarioMain.cs" />
+    <Compile Include="Quote\CopyNewQuote_Direct\D02\ScenarioMain.cs" />
+    <Compile Include="Quote\CopyNewQuote_Direct\D03\ScenarioMain.cs" />
+    <Compile Include="Quote\CopyNewQuote_Direct\D04\ScenarioMain.cs" />
+    <Compile Include="Quote\CopyNewQuote_Direct\D05\ScenarioMain.cs" />
+    <Compile Include="Quote\CopyNewQuote_Direct\D06\ScenarioMain.cs" />
+    <Compile Include="Quote\CopyNewQuote_Direct\D07\ScenarioMain.cs" />
+    <Compile Include="Quote\CopyNewQuote_Direct\D08\ScenarioMain.cs" />
+    <Compile Include="Quote\CopyNewQuote_Direct\D09\ScenarioMain.cs" />
+    <Compile Include="Quote\CopyNewQuote_Direct\D10\ScenarioMain.cs" />
+    <Compile Include="Quote\CopyNewQuote_Direct\D11-D12\ScenarioMain.cs" />
+    <Compile Include="Quote\CopyNewQuote_Direct\D13\ScenarioMain.cs" />
+    <Compile Include="Quote\CopyNewQuote_Direct\D16\ScenarioMain.cs" />
+    <Compile Include="Quote\CopyNewQuote_Indirect\D49\ScenarioMain.cs" />
+    <Compile Include="Quote\CopyNewQuote_Indirect\D50\ScenarioMain.cs" />
+    <Compile Include="Quote\CopyNewQuote_Indirect\D51\ScenarioMain.cs" />
+    <Compile Include="Quote\CopyNewQuote_Indirect\D52\ScenarioMain.cs" />
+    <Compile Include="Quote\CopyNewQuote_Indirect\D53\ScenarioMain.cs" />
+    <Compile Include="Quote\CopyNewQuote_Indirect\D54\ScenarioMain.cs" />
+    <Compile Include="Quote\CopyNewQuote_Indirect\D55\ScenarioMain.cs" />
+    <Compile Include="Quote\CopyNewQuote_Indirect\D56\ScenarioMain.cs" />
+    <Compile Include="Quote\CopyNewQuote_Indirect\D57\ScenarioMain.cs" />
+    <Compile Include="Quote\CopyNewQuote_Indirect\D58\ScenarioMain.cs" />
+    <Compile Include="Quote\CopyNewQuote_Indirect\D59-D60\ScenarioMain.cs" />
+    <Compile Include="Quote\CopyNewQuote_Indirect\D61\ScenarioMain.cs" />
+    <Compile Include="Quote\CopyNewQuote_Indirect\D62\ScenarioMain.cs" />
+    <Compile Include="Quote\CopyNewVersion_Direct\D17\ScenarioMain.cs" />
+    <Compile Include="Quote\CopyNewVersion_Direct\D18\ScenarioMain.cs" />
+    <Compile Include="Quote\CopyNewVersion_Direct\D19\ScenarioMain.cs" />
+    <Compile Include="Quote\CopyNewVersion_Direct\D20\ScenarioMain.cs" />
+    <Compile Include="Quote\CopyNewVersion_Direct\D21\ScenarioMain.cs" />
+    <Compile Include="Quote\CopyNewVersion_Direct\D22\ScenarioMain.cs" />
+    <Compile Include="Quote\CopyNewVersion_Direct\D23\ScenarioMain.cs" />
+    <Compile Include="Quote\CopyNewVersion_Direct\D24\ScenarioMain.cs" />
+    <Compile Include="Quote\CopyNewVersion_Direct\D25\ScenarioMain.cs" />
+    <Compile Include="Quote\CopyNewVersion_Direct\D26\ScenarioMain.cs" />
+    <Compile Include="Quote\CopyNewVersion_Direct\D27_D28\ScenarioMain.cs" />
+    <Compile Include="Quote\CopyNewVersion_Direct\D29\ScenarioMain.cs" />
+    <Compile Include="Quote\CopyNewVersion_Direct\D32\ScenarioMain.cs" />
+    <Compile Include="Quote\CopyNewVersion_Indirect\D63\ScenarioMain.cs" />
+    <Compile Include="Quote\CopyNewVersion_Indirect\D64\ScenarioMain.cs" />
+    <Compile Include="Quote\CopyNewVersion_Indirect\D65\ScenarioMain.cs" />
+    <Compile Include="Quote\CopyNewVersion_Indirect\D66\ScenarioMain.cs" />
+    <Compile Include="Quote\CopyNewVersion_Indirect\D67\ScenarioMain.cs" />
+    <Compile Include="Quote\CopyNewVersion_Indirect\D68\ScenarioMain.cs" />
+    <Compile Include="Quote\CopyNewVersion_Indirect\D69\ScenarioMain.cs" />
+    <Compile Include="Quote\CopyNewVersion_Indirect\D70\ScenarioMain.cs" />
+    <Compile Include="Quote\CopyNewVersion_Indirect\D71\ScenarioMain.cs" />
+    <Compile Include="Quote\CopyNewVersion_Indirect\D72\ScenarioMain.cs" />
+    <Compile Include="Quote\CopyNewVersion_Indirect\D73_D74\ScenarioMain.cs" />
+    <Compile Include="Quote\CopyNewVersion_Indirect\D75\ScenarioMain.cs" />
+    <Compile Include="Quote\CopyNewVersion_Indirect\D76\ScenarioMain.cs" />
+    <Compile Include="Quote\CreateNewQuote_Direct\D33\ScenarioMain.cs" />
+    <Compile Include="Quote\CreateNewQuote_Direct\D34\ScenarioMain.cs" />
+    <Compile Include="Quote\CreateNewQuote_Direct\D35\ScenarioMain.cs" />
+    <Compile Include="Quote\CreateNewQuote_Direct\D36\ScenarioMain.cs" />
+    <Compile Include="Quote\CreateNewQuote_Direct\D37\ScenarioMain.cs" />
+    <Compile Include="Quote\CreateNewQuote_Direct\D38\ScenarioMain.cs" />
+    <Compile Include="Quote\CreateNewQuote_Direct\D39\ScenarioMain.cs" />
+    <Compile Include="Quote\CreateNewQuote_Direct\D40\ScenarioMain.cs" />
+    <Compile Include="Quote\CreateNewQuote_Direct\D41\ScenarioMain.cs" />
+    <Compile Include="Quote\CreateNewQuote_Direct\D42\ScenarioMain.cs" />
+    <Compile Include="Quote\CreateNewQuote_Direct\D43_D44\ScenarioMain.cs" />
+    <Compile Include="Quote\CreateNewQuote_Direct\D45\ScenarioMain.cs" />
+    <Compile Include="Quote\CreateNewQuote_Direct\D48\ScenarioMain.cs" />
+    <Compile Include="Quote\CreateNewQuote_Indirect\Distributor\D104\ScenarioMain.cs" />
+    <Compile Include="Quote\CreateNewQuote_Indirect\Distributor\D105\ScenarioMain.cs" />
+    <Compile Include="Quote\CreateNewQuote_Indirect\Distributor\D106\ScenarioMain.cs" />
+    <Compile Include="Quote\CreateNewQuote_Indirect\Distributor\D107\ScenarioMain.cs" />
+    <Compile Include="Quote\CreateNewQuote_Indirect\Distributor\D108\ScenarioMain.cs" />
+    <Compile Include="Quote\CreateNewQuote_Indirect\Distributor\D109\ScenarioMain.cs" />
+    <Compile Include="Quote\CreateNewQuote_Indirect\Distributor\D110\ScenarioMain.cs" />
+    <Compile Include="Quote\CreateNewQuote_Indirect\Distributor\D111\ScenarioMain.cs" />
+    <Compile Include="Quote\CreateNewQuote_Indirect\Distributor\D112\ScenarioMain.cs" />
+    <Compile Include="Quote\CreateNewQuote_Indirect\Distributor\D113_D114\ScenarioMain.cs" />
+    <Compile Include="Quote\CreateNewQuote_Indirect\Distributor\D115\ScenarioMain.cs" />
+    <Compile Include="Quote\CreateNewQuote_Indirect\Distributor\D116\ScenarioMain.cs" />
+    <Compile Include="Quote\CreateNewQuote_Indirect\ReSell\D100_D101\ScenarioMain.cs" />
+    <Compile Include="Quote\CreateNewQuote_Indirect\ReSell\D102\ScenarioMain.cs" />
+    <Compile Include="Quote\CreateNewQuote_Indirect\ReSell\D103\ScenarioMain.cs" />
+    <Compile Include="Quote\CreateNewQuote_Indirect\ReSell\D91\ScenarioMain.cs" />
+    <Compile Include="Quote\CreateNewQuote_Indirect\ReSell\D92\ScenarioMain.cs" />
+    <Compile Include="Quote\CreateNewQuote_Indirect\ReSell\D93\ScenarioMain.cs" />
+    <Compile Include="Quote\CreateNewQuote_Indirect\ReSell\D94\ScenarioMain.cs" />
+    <Compile Include="Quote\CreateNewQuote_Indirect\ReSell\D95\ScenarioMain.cs" />
+    <Compile Include="Quote\CreateNewQuote_Indirect\ReSell\D96\ScenarioMain.cs" />
+    <Compile Include="Quote\CreateNewQuote_Indirect\ReSell\D97\ScenarioMain.cs" />
+    <Compile Include="Quote\CreateNewQuote_Indirect\ReSell\D98\ScenarioMain.cs" />
+    <Compile Include="Quote\CreateNewQuote_Indirect\ReSell\D99\ScenarioMain.cs" />
+    <Compile Include="Quote\CreateNewQuote_Indirect\StockAndSell\D77\ScenarioMain.cs" />
+    <Compile Include="Quote\CreateNewQuote_Indirect\StockAndSell\D78\ScenarioMain.cs" />
+    <Compile Include="Quote\CreateNewQuote_Indirect\StockAndSell\D79\ScenarioMain.cs" />
+    <Compile Include="Quote\CreateNewQuote_Indirect\StockAndSell\D80\ScenarioMain.cs" />
+    <Compile Include="Quote\CreateNewQuote_Indirect\StockAndSell\D81\ScenarioMain.cs" />
+    <Compile Include="Quote\CreateNewQuote_Indirect\StockAndSell\D82\ScenarioMain.cs" />
+    <Compile Include="Quote\CreateNewQuote_Indirect\StockAndSell\D83\ScenarioMain.cs" />
+    <Compile Include="Quote\CreateNewQuote_Indirect\StockAndSell\D84\ScenarioMain.cs" />
+    <Compile Include="Quote\CreateNewQuote_Indirect\StockAndSell\D85\ScenarioMain.cs" />
+    <Compile Include="Quote\CreateNewQuote_Indirect\StockAndSell\D86\ScenarioMain.cs" />
+    <Compile Include="Quote\CreateNewQuote_Indirect\StockAndSell\D87_D88\ScenarioMain.cs" />
+    <Compile Include="Quote\CreateNewQuote_Indirect\StockAndSell\D89\ScenarioMain.cs" />
+    <Compile Include="Quote\CreateNewQuote_Indirect\StockAndSell\D90\ScenarioMain.cs" />
+    <Compile Include="Reports\ErrorCodeClass.cs" />
+    <Compile Include="Reports\ErrorLoging.cs" />
+    <Compile Include="Reports\ResultLogging.cs" />
+    <Compile Include="SmartPriceMain.cs" />
+    <Compile Include="Utilities\CustomGarbageCollector.cs" />
+    <Compile Include="Utilities\WebDriverUtils.cs" />
+    <Compile Include="Utilities\WebElementUtil.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+    <None Include="TestConfiguration.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="DataFactory\DataAccessLayer\TestData\EnvironmentCollection.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="..\packages\Selenium.WebDriver.ChromeDriver.101.0.4951.4100\build\Selenium.WebDriver.ChromeDriver.targets" Condition="Exists('..\packages\Selenium.WebDriver.ChromeDriver.101.0.4951.4100\build\Selenium.WebDriver.ChromeDriver.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Selenium.WebDriver.ChromeDriver.101.0.4951.4100\build\Selenium.WebDriver.ChromeDriver.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Selenium.WebDriver.ChromeDriver.101.0.4951.4100\build\Selenium.WebDriver.ChromeDriver.targets'))" />
+  </Target>
+</Project>

@@ -1,0 +1,26 @@
+{
+  "DSA": {
+    "GE1": "https://sales-sit-g1.dell.com/",
+    "GE2": "https://sales-sit-g2.dell.com/",
+    "GE3": "https://sales-sit-g3.dell.com/",
+    "GE4": "https://sales-sit-g4.dell.com/",
+    "PROD": "https://sales.dell.com/"
+  },
+  "GOAL": {
+    "GE1": "https://goal-sit1.us.dell.com/vendavo/",
+    "GE2": "https://goal-sit2.us.dell.com/vendavo/",
+    "GE3": "https://goal-sit3.us.dell.com/vendavo/",
+    "GE4": "https://goal-sit4.us.dell.com/vendavo/",
+    "PROD": "https://goal.dell.com/vendavo/"
+  },
+  
+  "Environment": "PROD",
+  "UserName": "chandrika_panigrahi",
+  "Password": "Passw0rd_",
+  "WebDriver": "Chrome",
+  "WebDriverType": "IWebDriver",
+  "Region":"EMEA"
+
+
+  
+}

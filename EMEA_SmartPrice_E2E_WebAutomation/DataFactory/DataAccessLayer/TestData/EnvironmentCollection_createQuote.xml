@@ -1,0 +1,323 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<DataFeed>
+	<Applications>SmartPrice</Applications>
+	<Country>United Kingdom</Country>
+	<Scenarios>
+	
+    <!--<Scenario ID="D35">
+			<Testcase>
+				<TestCaseTitle>DirectCreateNewQuote-Component Upgrade</TestCaseTitle>
+				<IsCustomerIdentificationQueryBased>N</IsCustomerIdentificationQueryBased>
+				<CustomerIdentificationQuery>
+					<![CDATA[ where CREATED > TO_DATE('08/01/2021', 'MM/DD/YYYY') and QuoteNumber Is not null and QUOTINGSYSTEM ='DSP' and EndUserAccountCustomerId is not null and isdirect='true' ]]>
+				</CustomerIdentificationQuery>
+				<CustomerIdentificationData>GB16335936</CustomerIdentificationData>
+				<ProductIdentificaton>
+					<BaseProduct>
+						<IsIdentifiedByQuery>N</IsIdentifiedByQuery>
+						<ProductIdentificationQuery>
+							<![CDATA[ CREATED > sysdate-1 and QuoteNumber Is not null and OrderCode Is not Null and QUOTINGSYSTEM ='DSP' ]]>
+						</ProductIdentificationQuery>
+						<ProductIdentificationData>
+							<![CDATA[ ]]>
+						</ProductIdentificationData>
+						<SystemSearch>Latitude</SystemSearch>
+						<SAndPSearch></SAndPSearch>
+						<Component Type="UPGRADE">
+							<Module>
+								<Id/>
+								<ComponentId/>
+							</Module>
+						</Component>
+					</BaseProduct>
+				</ProductIdentificaton>
+			</Testcase>
+    </Scenario>-->
+		<!--<Scenario ID="D36">
+			<Testcase>
+				<TestCaseTitle>DirectCreateNewQuote-AddAccessories</TestCaseTitle>
+				<IsCustomerIdentificationQueryBased>N</IsCustomerIdentificationQueryBased>
+				<CustomerIdentificationQuery>
+					<![CDATA[ where CREATED > TO_DATE('03/02/2022', 'MM/DD/YYYY') and LOCALCHANNELID='20' and QuoteNumber Is not null and QUOTINGSYSTEM ='DSP' and EndUserAccountCustomerId is not null and isdirect='true' ]]>
+				</CustomerIdentificationQuery>
+				<CustomerIdentificationData>GB16335936 </CustomerIdentificationData>
+				<ProductIdentificaton>
+					<BaseProduct>
+						<IsIdentifiedByQuery>N</IsIdentifiedByQuery>
+						<ProductIdentificationQuery>
+							<![CDATA[ CREATED > TO_DATE('03/02/2022', 'MM/DD/YYYY') and QuoteNumber Is not null and OrderCode Is not Null and QUOTINGSYSTEM ='DSP' ]]>
+						</ProductIdentificationQuery>
+						<ProductIdentificationData>
+							<![CDATA[ ]]>
+						</ProductIdentificationData>
+						<SystemSearch>Inspiron</SystemSearch>
+						<SAndPSearch/>
+						<Accessories Type="ADD">
+							<Module>
+								<Id/>
+								<AccessoryID/>
+							</Module>
+						</Accessories>
+					</BaseProduct>
+				</ProductIdentificaton>
+			</Testcase>
+	
+		</Scenario>
+		<Scenario ID="D37">
+			<Testcase>
+				<TestCaseTitle>DirectCreateNewQuote-Add Service</TestCaseTitle>
+				<IsCustomerIdentificationQueryBased>N</IsCustomerIdentificationQueryBased>
+				<CustomerIdentificationQuery>
+					<![CDATA[ where CREATED > TO_DATE('11/15/2021', 'MM/DD/YYYY') georegion = 'Americas' and geocountry = 'United States'and QuoteNumber Is not null and QUOTINGSYSTEM ='DSP' and EndUserAccountCustomerId is not null and isdirect='true' ]]>
+				</CustomerIdentificationQuery>
+				<CustomerIdentificationData>GB16335936</CustomerIdentificationData>
+				<ProductIdentificaton>
+					<BaseProduct>
+						<IsIdentifiedByQuery>N</IsIdentifiedByQuery>
+						<ProductIdentificationQuery>
+							<![CDATA[ CREATED > TO_DATE('08/15/2021', 'MM/DD/YYYY')and geocountry = 'United States'and QuoteNumber Is not null and OrderCode Is not Null and QUOTINGSYSTEM ='DSP' ]]>
+						</ProductIdentificationQuery>
+						<ProductIdentificationData>
+							<![CDATA[ ]]>
+						</ProductIdentificationData>
+						<SystemSearch>Inspiron</SystemSearch>
+						<SAndPSearch/>
+						<Services Type="ADD">
+							<Module>
+								<Id/>
+								<ServiceId/>
+							</Module>
+						</Services>
+					</BaseProduct>
+				</ProductIdentificaton>
+			</Testcase>
+		</Scenario>
+
+		<Scenario ID="D38">
+			<Testcase>
+				<TestCaseTitle>DirectCreateNewQuote-UpgradeService</TestCaseTitle>
+				<IsCustomerIdentificationQueryBased>N</IsCustomerIdentificationQueryBased>
+				<CustomerIdentificationQuery>
+					<![CDATA[ where CREATED > TO_DATE('11/15/2021', 'MM/DD/YYYY') georegion = 'Americas' and geocountry = 'United States'and QuoteNumber Is not null and QUOTINGSYSTEM ='DSP' and EndUserAccountCustomerId is not null and isdirect='true' ]]>
+				</CustomerIdentificationQuery>
+				<CustomerIdentificationData>GB16335936</CustomerIdentificationData>
+				<ProductIdentificaton>
+					<BaseProduct>
+						<IsIdentifiedByQuery>Y</IsIdentifiedByQuery>
+						<ProductIdentificationQuery>
+							<![CDATA[ CREATED > TO_DATE('08/15/2021', 'MM/DD/YYYY')and geocountry = 'United States'and QuoteNumber Is not null and OrderCode Is not Null and QUOTINGSYSTEM ='DSP' ]]>
+						</ProductIdentificationQuery>
+						<ProductIdentificationData>
+							<![CDATA[ smi153w11p1c5103 ]]>
+						</ProductIdentificationData>
+						<SystemSearch/>
+						<SAndPSearch>Inspiron</SAndPSearch>
+						<Services Type="UPGRADE">
+							<Module>
+								<Id>30</Id>
+								<ServiceId/>
+							</Module>
+						</Services>
+					</BaseProduct>
+				</ProductIdentificaton>
+			</Testcase>
+	
+		</Scenario>
+		<Scenario ID="D39">
+			<Testcase>
+				<TestCaseTitle>DirectCreateNewQuote-DownGradeService</TestCaseTitle>
+				<IsCustomerIdentificationQueryBased>N</IsCustomerIdentificationQueryBased>
+				<CustomerIdentificationQuery>
+					<![CDATA[ where CREATED > TO_DATE('11/15/2021', 'MM/DD/YYYY') georegion = 'Americas' and geocountry = 'United States'and QuoteNumber Is not null and QUOTINGSYSTEM ='DSP' and EndUserAccountCustomerId is not null and isdirect='true' ]]>
+				</CustomerIdentificationQuery>
+				<CustomerIdentificationData>Inspiron</CustomerIdentificationData>
+				<ProductIdentificaton>
+					<BaseProduct>
+						<IsIdentifiedByQuery>Y</IsIdentifiedByQuery>
+						<ProductIdentificationQuery>
+							<![CDATA[ CREATED > TO_DATE('08/15/2021', 'MM/DD/YYYY')and geocountry = 'United States'and QuoteNumber Is not null and OrderCode Is not Null and QUOTINGSYSTEM ='DSP' ]]>
+						</ProductIdentificationQuery>
+						<ProductIdentificationData>
+							<![CDATA[ smi153w11p1c5103 ]]>
+						</ProductIdentificationData>
+						<SystemSearch/>
+						<SAndPSearch>Inspiron</SAndPSearch>
+						<Services Type="DOWNGRADE">
+							<Module>
+								<Id>29</Id>
+								<ServiceId/>
+							</Module>
+						</Services>
+					</BaseProduct>
+				</ProductIdentificaton>
+			</Testcase>
+		
+		</Scenario>
+		--><!--<Scenario ID="D40">
+			<TestCase>
+				<TestCaseTitle>Increase Quantity</TestCaseTitle>
+				<IsCustomerIdentificationQueryBased>N</IsCustomerIdentificationQueryBased>
+				<CustomerIdentificationQuery>
+					<![CDATA[ where CREATED > TO_DATE('11/15/2021', 'MM/DD/YYYY') georegion = 'Americas' and geocountry = 'United States'and QuoteNumber Is not null and QUOTINGSYSTEM ='DSP' and EndUserAccountCustomerId is not null and isdirect='true' ]]>
+				</CustomerIdentificationQuery>
+				<CustomerIdentificationData>GB16335936</CustomerIdentificationData>
+				<ProductIdentificaton>
+					<BaseProduct>
+						<IsIdentifiedByQuery>N</IsIdentifiedByQuery>
+						<ProductIdentificationQuery>
+							<![CDATA[ CREATED > TO_DATE('08/15/2021', 'MM/DD/YYYY')and geocountry = 'United States'and QuoteNumber Is not null and OrderCode Is not Null and QUOTINGSYSTEM ='DSP' ]]>
+						</ProductIdentificationQuery>
+						<ProductIdentificationData>
+							<![CDATA[ ]]>
+						</ProductIdentificationData>
+						<SystemSearch>Latitude</SystemSearch>
+						<SAndPSearch></SAndPSearch>
+					</BaseProduct>
+				</ProductIdentificaton>
+				<QuantityChange Type="INCREASE">
+					<Quantity>11</Quantity>
+				</QuantityChange>
+			</TestCase>
+		</Scenario>
+		<Scenario ID="D41">
+			<TestCase>
+				<TestCaseTitle>Decrease Quantity</TestCaseTitle>
+				<IsCustomerIdentificationQueryBased>N</IsCustomerIdentificationQueryBased>
+				<CustomerIdentificationQuery>
+					<![CDATA[ where CREATED > TO_DATE('11/15/2021', 'MM/DD/YYYY') georegion = 'Americas' and geocountry = 'United States'and QuoteNumber Is not null and QUOTINGSYSTEM ='DSP' and EndUserAccountCustomerId is not null and isdirect='true' ]]>
+				</CustomerIdentificationQuery>
+				<CustomerIdentificationData>GB16335936</CustomerIdentificationData>
+				<ProductIdentificaton>
+					<BaseProduct>
+						<IsIdentifiedByQuery>N</IsIdentifiedByQuery>
+						<ProductIdentificationQuery>
+							<![CDATA[ CREATED > TO_DATE('08/15/2021', 'MM/DD/YYYY')and geocountry = 'United States'and QuoteNumber Is not null and OrderCode Is not Null and QUOTINGSYSTEM ='DSP' ]]>
+						</ProductIdentificationQuery>
+						<ProductIdentificationData>
+							<![CDATA[ ]]>
+						</ProductIdentificationData>
+						<SystemSearch>Latitude</SystemSearch>
+						<SAndPSearch></SAndPSearch>
+					</BaseProduct>
+				</ProductIdentificaton>
+				<QuantityChange Type="DECREASE">
+					<Quantity>1</Quantity>
+				</QuantityChange>
+			</TestCase>
+		</Scenario>--><!--
+		<Scenario ID="D42">
+			<Testcase>
+				<TestCaseTitle>ChangeCustomer</TestCaseTitle>
+				<IsNewCustomerIdentificationQueryBased>N</IsNewCustomerIdentificationQueryBased>
+				<NewCustomerIdentificationQuery>
+					<![CDATA[ where CREATED > TO_DATE('11/15/2021', 'MM/DD/YYYY') georegion = 'Americas' and geocountry = 'United States'and QuoteNumber Is not null and QUOTINGSYSTEM ='DSP' and EndUserAccountCustomerId is not null and isdirect='true' ]]>
+				</NewCustomerIdentificationQuery>
+				<NewCustomerIdentificationData>GB16335936</NewCustomerIdentificationData>
+				<ProductIdentificaton>
+					<BaseProduct>
+						<IsIdentifiedByQuery>N</IsIdentifiedByQuery>
+						<ProductIdentificationQuery>
+							<![CDATA[ CREATED > TO_DATE('08/15/2021', 'MM/DD/YYYY')and geocountry = 'United States'and QuoteNumber Is not null and OrderCode Is not Null and QUOTINGSYSTEM ='DSP' ]]>
+						</ProductIdentificationQuery>
+						<ProductIdentificationData>
+							<![CDATA[ ]]>
+						</ProductIdentificationData>
+						<SystemSearch>Inspiron</SystemSearch>
+						<SAndPSearch></SAndPSearch>
+					</BaseProduct>
+				</ProductIdentificaton>
+				<EndUserCustomerIdToPatch>
+					<IsCustomerIdentificationQueryBased>N</IsCustomerIdentificationQueryBased>
+					<IsCustomerInSameSegment>Y</IsCustomerInSameSegment>
+					<CrossSegmenId>202</CrossSegmenId>
+					<CustomerIdentificationQuery>Query</CustomerIdentificationQuery>
+					<CustomerIdentificationData>GB15123711</CustomerIdentificationData>
+				</EndUserCustomerIdToPatch>
+			</Testcase>
+		</Scenario>
+		<Scenario ID="D43-D44">
+			<Testcase>
+				<TestCaseTitle>ChangeSFDCDealId</TestCaseTitle>
+				<IsCustomerIdentificationQueryBased>N</IsCustomerIdentificationQueryBased>
+				<CustomerIdentificationQuery>
+					<![CDATA[ where CREATED > TO_DATE('11/15/2021', 'MM/DD/YYYY') georegion = 'Americas' and geocountry = 'United States'and QuoteNumber Is not null and QUOTINGSYSTEM ='DSP' and EndUserAccountCustomerId is not null and isdirect='true' ]]>
+				</CustomerIdentificationQuery>
+				<CustomerIdentificationData>GB16335936</CustomerIdentificationData>
+				<ProductIdentificaton>
+					<BaseProduct>
+						<IsIdentifiedByQuery>N</IsIdentifiedByQuery>
+						<ProductIdentificationQuery>
+							<![CDATA[ CREATED > TO_DATE('08/15/2021', 'MM/DD/YYYY')and geocountry = 'United States'and QuoteNumber Is not null and OrderCode Is not Null and QUOTINGSYSTEM ='DSP' ]]>
+						</ProductIdentificationQuery>
+						<ProductIdentificationData>
+							<![CDATA[ ]]>
+						</ProductIdentificationData>
+						<SystemSearch>Inspiron</SystemSearch>
+						<SAndPSearch/>
+					</BaseProduct>
+				</ProductIdentificaton>
+				<SFDCIdToPatch>
+					<IsSFDCIdentificationDataAutomatic>N</IsSFDCIdentificationDataAutomatic>
+					<SFDCIdentificationQuery/>
+					<SFDCIdentificationData>13363221</SFDCIdentificationData>
+				</SFDCIdToPatch>
+			</Testcase>
+		</Scenario>-->
+		<Scenario ID="D45">
+			<Testcase>
+				<TestCaseTitle>Price Change</TestCaseTitle>
+				<IsCustomerIdentificationQueryBased>N</IsCustomerIdentificationQueryBased>
+				<CustomerIdentificationQuery>
+					<![CDATA[ where CREATED > TO_DATE('11/15/2021', 'MM/DD/YYYY') georegion = 'Americas' and geocountry = 'United States'and QuoteNumber Is not null and QUOTINGSYSTEM ='DSP' and EndUserAccountCustomerId is not null and isdirect='true' ]]>
+				</CustomerIdentificationQuery>
+				<CustomerIdentificationData>GB2111513</CustomerIdentificationData>
+				<ProductIdentificaton>
+					<BaseProduct>
+						<IsIdentifiedByQuery>N</IsIdentifiedByQuery>
+						<ProductIdentificationQuery>
+							<![CDATA[ CREATED > TO_DATE('08/15/2021', 'MM/DD/YYYY')and geocountry = 'United States'and QuoteNumber Is not null and OrderCode Is not Null and QUOTINGSYSTEM ='DSP' ]]>
+						</ProductIdentificationQuery>
+						<ProductIdentificationData>
+							<![CDATA[ ]]>
+						</ProductIdentificationData>
+						<SystemSearch>Inspiron</SystemSearch>
+						<SAndPSearch></SAndPSearch>
+					</BaseProduct>
+				</ProductIdentificaton>
+				<PriceChange>
+					<PriceChangeType>System</PriceChangeType>
+					<ProductIdentificationData/>
+				</PriceChange>
+			</Testcase>
+		</Scenario>
+		<!--<Scenario ID="D48">
+			<Testcase>
+				<TestCaseTitle>StandardPartnerDiscount</TestCaseTitle>
+				<IsCustomerIdentificationQueryBased>N</IsCustomerIdentificationQueryBased>
+				<CustomerIdentificationQuery>
+					<![CDATA[ where CREATED > TO_DATE('11/15/2021', 'MM/DD/YYYY') georegion = 'Americas' and geocountry = 'United States'and QuoteNumber Is not null and QUOTINGSYSTEM ='DSP' and EndUserAccountCustomerId is not null and isdirect='true' ]]>
+				</CustomerIdentificationQuery>
+				<CustomerIdentificationData>GB2111513</CustomerIdentificationData>
+				<ProductIdentificaton>
+					<BaseProduct>
+						<IsIdentifiedByQuery>N</IsIdentifiedByQuery>
+						<ProductIdentificationQuery>
+							<![CDATA[ CREATED > TO_DATE('08/15/2021', 'MM/DD/YYYY')and geocountry = 'United States'and QuoteNumber Is not null and OrderCode Is not Null and QUOTINGSYSTEM ='DSP' ]]>
+						</ProductIdentificationQuery>
+						<ProductIdentificationData>
+							<![CDATA[ ]]>
+						</ProductIdentificationData>
+						<SystemSearch>Latitude</SystemSearch>
+						<SAndPSearch/>
+					</BaseProduct>
+				</ProductIdentificaton>
+				<StandardPartnerDiscount>
+					<StandardPartnerDiscountType>AutoSelect</StandardPartnerDiscountType>
+					<ProductIdentificationData/>
+				</StandardPartnerDiscount>
+			</Testcase>
+		</Scenario>-->
+</Scenarios>
+</DataFeed>
+  
+ 

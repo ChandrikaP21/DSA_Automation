@@ -1,0 +1,5 @@
+Goal (D01,D02,D500,D501)
+Quote Number-3000121463023.1(US)
+Quotenumber-3000124908598.1 , FINLAND
+Finland -direct-3000127661403.1
+		Indirect - 3000127637460 ver 2

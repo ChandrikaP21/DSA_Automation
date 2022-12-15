@@ -1,0 +1,15 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs/GPTAutomationSuiteV2
+/bin/Debug
+/SmartPrice_E2E_WebAutomation/bin/Debug
+/LATAM_SmartPrice_E2E_WebAutomation/bin/Debug
+/bin
+/obj
+/.vs
+/LATAM_SmartPrice_E2E_WebAutomation/obj/Debug
+/LATAM_SmartPrice_E2E_WebAutomation/obj/Release
+/SmartPrice_E2E_WebAutomation/obj/Debug
+/SmartPrice_E2E_WebAutomation/obj/Release

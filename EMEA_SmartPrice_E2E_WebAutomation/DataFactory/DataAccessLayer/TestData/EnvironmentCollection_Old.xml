@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<DataFeed>
+  <Applications><!--Goal-->SmartPrice</Applications>
+  <Country><!--Australia--><!--UNITED STATES-->SWEDEN</Country>
+  <CountryZone>EMEA</CountryZone>
+  <Scenarios>
+    <Scenario ID="D66">
+      <Testcase>
+        <TestCaseTitle>TestSmartPrice Guidance For Accessories</TestCaseTitle>
+        <IsBaseQuoteIdentificationQueryBased>N</IsBaseQuoteIdentificationQueryBased>
+        <BaseQuoteIdentificationQUERY>
+          <![CDATA[ where created > sysdate -1 and (servicetype is null or servicetype = '1') and ordercode is not null and quotingsystem = 'DSP' and ordercode <> pnr.skunum
+        and skunum like '210-%'and (itemclasscodedesc like '%LATI%' or skunumdesc like '%LATI%' or itemclasscodedesc like '%PRECISION%' or skunumdesc like '%PRECISION%') and rownum=1]]>
+        </BaseQuoteIdentificationQUERY>
+        <BaseQuoteIdentificationDATA>3000132430207.1</BaseQuoteIdentificationDATA>
+        <ProductIdentificaton>
+          <BaseProduct>
+            <ProductIdentificationData>
+              <!--if this section is left blank the suite shall pickup the first product in the list of products available-->
+              <![CDATA[xctop354015usr]]>
+            </ProductIdentificationData>
+            <Accessories Type="ADD">
+              <Module>
+                <Id></Id>
+                <AccessoryID></AccessoryID>
+              </Module>
+
+            </Accessories>
+          </BaseProduct>
+        </ProductIdentificaton>
+      </Testcase>
+      <!--<Testcase>
+        <TestCaseTitle>TestSmartPrice Guidance For Accessories</TestCaseTitle>
+        <IsBaseQuoteIdentificationQueryBased>Y</IsBaseQuoteIdentificationQueryBased>
+        <BaseQuoteIdentificationQUERY>
+          <![CDATA[ where created > sysdate -1 and (servicetype is null or servicetype = '1') and ordercode is not null and quotingsystem = 'DSP' and ordercode <> pnr.skunum
+        and skunum like '210-%'and (itemclasscodedesc like '%LATI%' or skunumdesc like '%LATI%' or itemclasscodedesc like '%PRECISION%' or skunumdesc like '%PRECISION%') and rownum=1]]>
+        </BaseQuoteIdentificationQUERY>
+        <BaseQuoteIdentificationDATA>3000132430207.1</BaseQuoteIdentificationDATA>
+        <ProductIdentificaton>
+          <BaseProduct>
+            <ProductIdentificationData>
+              -->
+      <!--if this section is left blank the suite shall pickup the first product in the list of products available-->
+      <!--
+              <![CDATA[xctop576017usr_vp]]>
+            </ProductIdentificationData>
+            <Accessories Type="ADD">
+              <Module>
+                <Id>8601</Id>
+                <AccessoryID></AccessoryID>
+              </Module>
+            </Accessories>
+          </BaseProduct>
+        </ProductIdentificaton>
+      </Testcase>
+      <Testcase>
+        <TestCaseTitle>Test SmartPrice guidance for accessories</TestCaseTitle>
+        <IsBaseQuoteIdentificationQueryBased>Y</IsBaseQuoteIdentificationQueryBased>
+        <BaseQuoteIdentificationQUERY>
+          <![CDATA[ where created > sysdate -1 and (servicetype is null or servicetype = '1') and ordercode is not null and quotingsystem = 'DSP' and ordercode <> pnr.skunum
+        and skunum like '210-%'and (itemclasscodedesc like '%LATI%' or skunumdesc like '%LATI%' or itemclasscodedesc like '%PRECISION%' or skunumdesc like '%PRECISION%') and rownum=1]]>
+        </BaseQuoteIdentificationQUERY>
+        <BaseQuoteIdentificationDATA>3000132430207.1</BaseQuoteIdentificationDATA>
+        <ProductIdentificaton>
+          <BaseProduct>
+            <ProductIdentificationData>
+              <![CDATA[xctop576017usr_vp]]>
+            </ProductIdentificationData>
+            <Accessories Type="ADD">
+              <Module>
+                <Id>5113</Id>
+                <AccessoryID> [UP3017CC] </AccessoryID>
+              </Module>
+            </Accessories>
+          </BaseProduct>
+        </ProductIdentificaton>
+      </Testcase>-->
+    </Scenario>
+  </Scenarios>
+</DataFeed>
